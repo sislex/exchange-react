@@ -1,11 +1,11 @@
 import React from 'react';
 
-function App() {
+function Auth() {
   return (
     <div className="App">
-        App
+        Auth
     </div>
   );
 }
 
-export default App;
+export default Auth;

@@ -1,10 +1,15 @@
 import React from 'react';
+import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
+import Auth from "./rotes/Auth";
 
 function App() {
   return (
-    <div className="App">
-        App
-    </div>
+      <BrowserRouter>
+          <Routes>
+              <Route path="auth" element={<Auth />} />
+              <Route path="*" element={ <Navigate to="/auth" /> } />
+          </Routes>
+      </BrowserRouter>
   );
 }
 
